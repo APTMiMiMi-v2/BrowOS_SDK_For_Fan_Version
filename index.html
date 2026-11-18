@@ -15,7 +15,7 @@
 	<script src="browos-sdk.js"></script>
 	<script>
 		var out = document.getElementById("out");
-		function show(p) { return p.then(function (v) { out.textContent = "OK: sdkfiletest.txt" ; }, function (e) { out.textContent = "Error: " + e.message; }); }
+		function show(p) { return p.then(function (v) { out.textContent = "Executed: SDK Script" ; }, function (e) { out.textContent = "Error: " + e.message; }); }
 		BrowOS.ready.then(function (i) { document.getElementById("info").textContent = "Theme " + i.theme; }, function (e) { document.getElementById("info").textContent = e.message; });
 		document.getElementById("notify").onclick = function () { show(BrowOS.notify("BrowSDK", "From The SDK For Fan Version")); };
 		document.getElementById("write").onclick = function () { show(BrowOS.files.write("sdkfiletest.txt", "saved at " + new Date().toISOString())); };
