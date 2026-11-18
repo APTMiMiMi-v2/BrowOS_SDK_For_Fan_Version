@@ -17,7 +17,7 @@
 		var out = document.getElementById("out");
 		function show(p) { return p.then(function (v) { out.textContent = "OK: " + JSON.stringify(v); }, function (e) { out.textContent = "Error: " + e.message; }); }
 		BrowOS.ready.then(function (i) { document.getElementById("info").textContent = "Theme " + i.theme; }, function (e) { document.getElementById("info").textContent = e.message; });
-		document.getElementById("notify").onclick = function () { show(BrowOS.notify("Hello", "From the SDK demo")); };
+		document.getElementById("notify").onclick = function () { show(BrowOS.notify("BrowSDK", "From the SDK For Fan Version")); };
 		document.getElementById("write").onclick = function () { show(BrowOS.files.write("demo.txt", "saved at " + new Date().toISOString())); };
 		document.getElementById("read").onclick = function () { show(BrowOS.files.read("demo.txt")); };
 	</script>
