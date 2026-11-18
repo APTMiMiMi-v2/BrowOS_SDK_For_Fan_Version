@@ -1,4 +1,4 @@
-# BrowOS SDK
+# BrowOS SDK For Fan Version
 
 For websites that people add to BrowOS from BrowStore. The page runs in a window inside BrowOS and
 can use a few desktop features through `postMessage`. Add `browos-sdk.js` to your page:
@@ -25,3 +25,8 @@ can use a few desktop features through `postMessage`. Add `browos-sdk.js` to you
 The first time an app uses a feature BrowOS asks the person. The answer is remembered and can be
 changed in **Settings > System > App permissions**. An app can only reach its own folder in Files.
 Outside BrowOS `BrowOS.available` is `false` and every call rejects, so the page can fall back.
+
+Link: https://aptmimimi-v2.github.io/BrowOS_SDK_For_Fan_Version/
+
+
+Fan Version Needed [Git-BrowOS Fan Version]: https://aptmimimi-v2.github.io/Git-BrowOS_Fan_Version/
